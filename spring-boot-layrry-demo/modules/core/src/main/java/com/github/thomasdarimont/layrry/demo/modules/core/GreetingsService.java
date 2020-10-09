@@ -1,4 +1,4 @@
-package com.github.thomasdarimont.layrry.demo.core;
+package com.github.thomasdarimont.layrry.demo.modules.core;
 
 public interface GreetingsService {
 

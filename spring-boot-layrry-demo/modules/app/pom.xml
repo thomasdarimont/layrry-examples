@@ -14,11 +14,6 @@
     <description>Spring Boot Layrry App</description>
 
     <dependencies>
-        <dependency>
-            <groupId>com.github.thomasdarimont.layrry.demo</groupId>
-            <artifactId>spring-boot-layrry-core</artifactId>
-            <version>${project.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

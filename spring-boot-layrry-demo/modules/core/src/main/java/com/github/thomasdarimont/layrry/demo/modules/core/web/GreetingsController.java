@@ -1,6 +1,6 @@
-package com.github.thomasdarimont.layrry.demo.core.web;
+package com.github.thomasdarimont.layrry.demo.modules.core.web;
 
-import com.github.thomasdarimont.layrry.demo.core.GreetingsService;
+import com.github.thomasdarimont.layrry.demo.modules.core.GreetingsService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
