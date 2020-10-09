@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.4.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <packaging>pom</packaging>
+
+    <groupId>com.github.thomasdarimont.layrry.demo</groupId>
+    <artifactId>spring-boot-layrry-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <description>Spring Boot Layrry</description>
+
+    <modules>
+        <module>modules/core</module>
+        <module>modules/app</module>
+        <module>modules/launcher</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>15</java.version>
+
+        <layrry_version>1.0-SNAPSHOT</layrry_version>
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.moditect.layrry</groupId>
+                <artifactId>layrry-config-yaml</artifactId>
+                <version>${layrry_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.moditect.layrry</groupId>
+                <artifactId>layrry-config-toml</artifactId>
+                <version>${layrry_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.moditect.layrry</groupId>
+                <artifactId>layrry-launcher</artifactId>
+                <version>${layrry_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.moditect.layrry</groupId>
+                <artifactId>layrry-platform</artifactId>
+                <version>${layrry_version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
